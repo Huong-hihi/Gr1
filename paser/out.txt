@@ -1,0 +1,24 @@
+
+
+Relation: BN2828BN282
+################################
+Sentences: BN2828 (BN2828) ghi nhận tại tỉnh An Giang: Bệnh nhân nam, 23 tuổi, công dân Việt Nam, địa chỉ tại huyện An Phú, tỉnh An giang
+BN2828
+Sex:male
+ Age:23 tuổi
+ Nation:Vie
+Origin:địa chỉ tại huyện An
+################################
+Sentences:  Ngày 20/4/2021 bệnh nhân trên từ nước ngoài nhập cảnh tại Cửa khẩu Long Bình và được cách ly ngay sau khi nhập cảnh tại tỉnh An Giang
+BN2828
+################################
+Sentences:  Kết quả xét nghiệm ngày 22/4/2021 dương tính với SARS-CoV-2
+BN2828
+################################
+Sentences:  Hiện bệnh nhân được cách ly, điều trị tại Trung tâm y tế huyện An Phú, tỉnh An Giang
+BN2828
+################################
+Sentences: 
+
+
+BN2828

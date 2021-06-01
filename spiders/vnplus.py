@@ -4,7 +4,6 @@ class QuotesSpider(scrapy.Spider):
     name = "covidb" #định danh cho spider
     start_urls = [
              'https://www.vietnamplus.vn/chude/dich-viem-duong-ho-hap-cap-covid19/1070/trang1.vnp',
-            # 'https://baomoi.com/phong-chong-dich-covid-19/top/328.epi',
     ]
     def parse(self, response):
         finalPage = 'https://www.vietnamplus.vn'+ response.xpath('//nav[@class="pag"]/span[@id="mainContent_ContentList1_pager"]/ul/li/a/@href')[-1].extract()
