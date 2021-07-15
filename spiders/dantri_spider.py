@@ -2,13 +2,11 @@
 import scrapy
 import datetime
 class QuotesSpider(scrapy.Spider):
-    name = "erro" #định danh cho spider
+    name = "dantri" #định danh cho spider
     start_urls = [
              'https://baomoi.com/phong-chong-dich-covid-19/top/328.epi',
     ]
     def parse(self, response):
-    # if (response.url.split("=")[0] == 'https://thuvienphapluat.vn/tintuc/tag?keyword=Covid-19&p'):
-    #for linkbao in response.xpath('//article[@class="article media"]/figure[@class="media-left"]/a/@href').extract():
         for linkbao in response.xpath('//h4[@class="story__heading"]//a/@href').extract():
             yield scrapy.Request(linkbao, callback=self.saveFile)
         next_page_url = response.xpath('//a[@class="btn btn-sm btn-primary"]/@href').extract_first()

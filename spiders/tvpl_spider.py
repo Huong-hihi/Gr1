@@ -7,8 +7,6 @@ class QuotesSpider(scrapy.Spider):
         'https://thuvienphapluat.vn/tintuc/tag?keyword=Covid-19&p=1',
         ]
     def parse(self, response):
-    # if (response.url.split("=")[0] == 'https://thuvienphapluat.vn/tintuc/tag?keyword=Covid-19&p'):
-    #for linkbao in response.xpath('//article[@class="article media"]/figure[@class="media-left"]/a/@href').extract():
         for linkbao in response.xpath('//ul[@class="ulTinList"]/li[@class="tt"]/a/@href').extract():
             linkbao = 'https://thuvienphapluat.vn/'+ linkbao
             yield scrapy.Request(linkbao, callback=self.saveFile)

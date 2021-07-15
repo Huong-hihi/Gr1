@@ -15,11 +15,7 @@ mycursor = mydb.cursor()
 mycursor.execute("SELECT content FROM dlbn")
 myresult = mycursor.fetchall()
 import re
-# from . import neo4j_util as neo4j
-# import neo4j_util as neo4j
-
 f = open('output.txt', 'w+', encoding='utf-8')
-#f1 = open('datatrain.txt', 'w+', encoding='utf-8')
 FEMALE = ["nữ", "Nữ"]
 MALE = [r"(n|N)am", "nam giới"]
 AGE = [r"[0-9]{1,3}\s{1,6}tuổi"]
